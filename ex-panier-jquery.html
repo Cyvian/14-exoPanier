@@ -34,15 +34,15 @@
         });
       });
 
-      // fonction qui va s'occuper de basculer un fruit d'une liste à l'autre
-      function ajouterFruit(fruit, panier) {
+      // fonction qui va passer un fruit d'une liste à l'autre
+      function ajouterFruit(monFruit, panierFinal) {
         // on ajoute l'option au panier
         $("<option>", {
-          value: fruit.val(),
-          text: fruit.text(),
-        }).appendTo(panier);
+          value: monFruit.val(),
+          text: monFruit.text(),
+        }).appendTo(panierFinal);
 
-        fruit.remove(); // on supprime le fruit de la liste de départ
+        monFruit.remove(); // on supprime le fruit de la liste de départ
       }
     </script>
   </head>
@@ -77,4 +77,3 @@
     </table>
   </body>
 </html>
-propproppropprop
